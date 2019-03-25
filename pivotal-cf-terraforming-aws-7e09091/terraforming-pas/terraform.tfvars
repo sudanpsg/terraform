@@ -1,4 +1,4 @@
-env_name = "pcf"
+env_name = "aws-pivotal'
 
 region = "us-west-2"
 
