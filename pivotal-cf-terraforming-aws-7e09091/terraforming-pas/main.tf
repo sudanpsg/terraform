@@ -136,3 +136,11 @@ module "rds" {
   vpc_id             = "${module.infra.vpc_id}"
   tags               = "${local.actual_tags}"
 }
+
+terraform {
+  backend "s3" {
+    bucket = "mybucket"
+    key    = "path/to/my/key"
+    region = "us-east-1"
+  }
+}
