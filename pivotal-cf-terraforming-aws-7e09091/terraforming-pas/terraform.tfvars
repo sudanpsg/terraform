@@ -1,4 +1,4 @@
-env_name = "aws-pivotal'
+env_name = "aws-pivotal"
 
 region = "us-west-2"
 
@@ -63,3 +63,11 @@ tp6/zhZgcq8HNeDrHYc6r8GAyFqdtS1Qkp335zOixHQIjzc4Dgg//s1lJT1HrcCw
 vfv9yKGJWxu4gsgshvZ0QwUy7XJCnr1O4TK/+yvLBiZ2iGrFxkvXVQ==
 -----END EXAMPLE RSA PRIVATE KEY-----
 SSL_KEY
+
+terraform {
+  backend "s3" {
+    bucket = "dcp-mvp2-terraform-state"
+    key    = "tfstate/pcf_vpc"
+    region = "us-west-2"
+  }
+}

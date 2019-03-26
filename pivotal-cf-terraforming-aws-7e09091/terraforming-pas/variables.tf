@@ -50,11 +50,11 @@ variable "optional_ops_manager_ami" {
 }
 
 variable "ops_manager_instance_type" {
-  default = "r4.large"
+  default = "t2.micro"
 }
 
 variable "ops_manager_private" {
-  default     = false
+  default     = true
   description = "If true, the Ops Manager will be colocated with the BOSH director on the infrastructure subnet instead of on the public subnet"
 }
 
