@@ -50,7 +50,7 @@ variable "optional_ops_manager_ami" {
 }
 
 variable "ops_manager_instance_type" {
-  default = "t2.micro"
+  default = "r4.large"
 }
 
 variable "ops_manager_private" {
